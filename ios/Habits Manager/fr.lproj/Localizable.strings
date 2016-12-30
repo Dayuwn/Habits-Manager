@@ -6,10 +6,26 @@
   Copyright © 2016 Lucas Rollet. All rights reserved.
 */
 
-// Navbar titles
-"My Activities" = "Mes Activités";
+// Misc
+"Edit" = "Modifier";
+
+// Types
+"Boolean" = "Booleano";
+"Timed" = "Temporizado";
+
+// Cell Headers
+"Name" = "Nom";
+"Description" = "Description";
+"Type" = "Type";
+"Frequency" = "Fréquence";
+"Minimum Time" = "Temps\nMinimum";
+
+// Placeholders
+"Reading" = "Lire";
+"Read a little bit everyday" = "Lire un peu tous les jours";
 
 // Activity Informations
-"AI_Type_Header" = "Type:";
-"AI_Frequency_Header" = "Fréquence:";
-"AI_Description_Header" = "Description:";
+"My Activities" = "Mes Activités";
+
+// Activity Edition
+"Edit Activity" = "Modifier l'Activité";
