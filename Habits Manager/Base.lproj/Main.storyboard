@@ -107,11 +107,11 @@
                                             <color key="backgroundColor" red="1" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </view>
                                         <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OPE-Py-VDP" userLabel="Text">
-                                            <rect key="frame" x="65" y="60" width="243" height="111"/>
+                                            <rect key="frame" x="65" y="60" width="244" height="111"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="j5h-rG-Ubj" userLabel="Type">
-                                                    <rect key="frame" x="57" y="0.0" width="129" height="24"/>
+                                                    <rect key="frame" x="57.5" y="0.0" width="128.5" height="24"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Type:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EB-Kx-MuE" userLabel="Header">
                                                             <rect key="frame" x="0.0" y="0.0" width="51" height="24"/>
@@ -120,7 +120,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Boolean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukJ-vA-twT" userLabel="Label">
-                                                            <rect key="frame" x="56" y="0.0" width="73" height="24"/>
+                                                            <rect key="frame" x="56" y="0.0" width="72.5" height="24"/>
                                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                                             <color key="textColor" red="0.6588235294117647" green="0.64313725490196072" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -128,7 +128,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="U2m-c2-GEo" userLabel="Frequency">
-                                                    <rect key="frame" x="26" y="24" width="191" height="24"/>
+                                                    <rect key="frame" x="26.5" y="24" width="190.5" height="24"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Frequency:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hV-Vr-v5s" userLabel="Header">
                                                             <rect key="frame" x="0.0" y="0.0" width="103" height="24"/>
@@ -137,7 +137,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Everyday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhb-NF-o7j" userLabel="Label">
-                                                            <rect key="frame" x="108" y="0.0" width="83" height="24"/>
+                                                            <rect key="frame" x="108" y="0.0" width="82.5" height="24"/>
                                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                                             <color key="textColor" red="0.6588235294" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -145,23 +145,23 @@
                                                     </subviews>
                                                 </stackView>
                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ege-7h-dfE">
-                                                    <rect key="frame" x="0.0" y="48" width="243" height="15"/>
+                                                    <rect key="frame" x="0.0" y="48" width="243.5" height="15"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="CHQ-0y-1WH"/>
                                                     </constraints>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yfi-id-Uk5" userLabel="Description">
-                                                    <rect key="frame" x="9" y="63" width="225" height="48"/>
+                                                    <rect key="frame" x="9.5" y="63" width="224.5" height="48"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8R-po-c2B" userLabel="Header">
-                                                            <rect key="frame" x="0.0" y="0.0" width="225" height="24"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="224.5" height="24"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Read a little bit, everyday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUk-qZ-Dh1" userLabel="Label">
-                                                            <rect key="frame" x="0.0" y="24" width="225" height="24"/>
+                                                            <rect key="frame" x="0.0" y="24" width="224.5" height="24"/>
                                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                                             <color key="textColor" red="0.6588235294" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -175,9 +175,12 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="chevronImageView" destination="hdo-4R-ObH" id="Omc-oa-eYz"/>
+                                    <outlet property="descriptionHeaderLabel" destination="f8R-po-c2B" id="wrW-Bp-nC7"/>
                                     <outlet property="descriptionLabel" destination="CUk-qZ-Dh1" id="Exa-ht-cqj"/>
+                                    <outlet property="frequencyHeaderLabel" destination="3hV-Vr-v5s" id="hlO-Ec-7OQ"/>
                                     <outlet property="frequencyLabel" destination="hhb-NF-o7j" id="evx-UC-aZ6"/>
                                     <outlet property="titleLabel" destination="1tO-Uo-H1s" id="KpA-65-eeL"/>
+                                    <outlet property="typeHeaderLabel" destination="3EB-Kx-MuE" id="wBC-zY-MEF"/>
                                     <outlet property="typeLabel" destination="ukJ-vA-twT" id="Kaf-th-zM9"/>
                                     <outletCollection property="shadowedViews" destination="MbT-Iw-KLG" collectionClass="NSMutableArray" id="FEZ-IR-MiM"/>
                                     <outletCollection property="shadowedViews" destination="5Yq-Gu-R8V" collectionClass="NSMutableArray" id="b5g-PI-oI2"/>
