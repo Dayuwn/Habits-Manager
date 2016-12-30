@@ -8,17 +8,15 @@
 
 import UIKit
 
-class HMSliderCell: UITableViewCell {
+class HMSliderCell: HMHeaderCustomCell {
 
+    @IBOutlet weak var sliderLabel: UILabel!
+    @IBOutlet weak var slider: UISlider!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
+        self.headerLabel.text = NSLocalizedString("Minimum Time", comment: "")
     }
 
 }

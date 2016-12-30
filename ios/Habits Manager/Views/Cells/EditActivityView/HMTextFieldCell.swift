@@ -8,20 +8,28 @@
 
 import UIKit
 
-class HMTextField: UITableViewCell {
+class HMTextFieldCell: HMHeaderCustomCell {
 
-    @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
+        setHeaderAndPlaceholderFor(tag: self.tag)
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    // Needed because two cells with different contents use this class.
+    func setHeaderAndPlaceholderFor(tag: Int) {
+        switch tag {
+        case 0:
+            self.headerLabel.text = NSLocalizedString("Name", comment: "")
+            self.textField.placeholder = NSLocalizedString("Reading", comment: "")
+        case 1:
+            self.headerLabel.text = NSLocalizedString("Description", comment: "")
+            self.textField.placeholder = NSLocalizedString("Read a little bit everyday", comment: "")
+        default:
+            break
+        }
     }
-
+    
 }

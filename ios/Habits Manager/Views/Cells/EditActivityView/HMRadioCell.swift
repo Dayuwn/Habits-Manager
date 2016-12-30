@@ -8,17 +8,41 @@
 
 import UIKit
 
-class HMRadioCell: UITableViewCell {
+class HMRadioCell: HMHeaderCustomCell {
 
+    @IBOutlet weak var booleanRadioButton: UIButton!
+    @IBOutlet weak var timedRadioButton: UIButton!
+    
+    var selectedType: EActivityType = .boolean {
+        didSet {
+            selectedTypeRaw = selectedType.rawValue
+        }
+    }
+    dynamic var selectedTypeRaw: Int = -1
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.headerLabel.text = NSLocalizedString("Type", comment: "")
+        
+        self.booleanRadioButton.setTitle(" " + NSLocalizedString("Boolean", comment: ""), for: .normal)
+        self.booleanRadioButton.tag = 0
+        self.timedRadioButton.setTitle(" " + NSLocalizedString("Timed", comment: ""), for: .normal)
+        self.timedRadioButton.tag = 1
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    // Only one of the two buttons can be selected at a time.
+    @IBAction func buttonPressed(_ sender: UIButton!) {
+        if sender.tag == 0 && selectedType != .boolean {
+            selectedType = .boolean
+            booleanRadioButton.setImage(#imageLiteral(resourceName: "radiobtn_checked"), for: .normal)
+            timedRadioButton.setImage(#imageLiteral(resourceName: "radiobtn_unchecked"), for: .normal)
+        }
+        else if sender.tag == 1 && selectedType != .timed {
+            selectedType = .timed
+            booleanRadioButton.setImage(#imageLiteral(resourceName: "radiobtn_unchecked"), for: .normal)
+            timedRadioButton.setImage(#imageLiteral(resourceName: "radiobtn_checked"), for: .normal)
+        }
     }
-
+    
 }

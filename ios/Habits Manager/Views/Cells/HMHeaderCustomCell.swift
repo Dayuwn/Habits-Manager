@@ -8,8 +8,14 @@
 
 import UIKit
 
+//
+// A cell class that is inherited by every standard cell with a header, and another random field.
+//
+
 class HMHeaderCustomCell: UITableViewCell {
 
+    @IBOutlet weak var headerLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -8,17 +8,15 @@
 
 import UIKit
 
-class HMStepperCell: UITableViewCell {
+class HMStepperCell: HMHeaderCustomCell {
 
+    @IBOutlet weak var frequencyLabel: UILabel!
+    @IBOutlet weak var frequencyStepper: UIStepper!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
+        self.headerLabel.text = NSLocalizedString("Frequency", comment: "")
     }
 
 }
