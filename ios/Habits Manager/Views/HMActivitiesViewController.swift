@@ -10,13 +10,20 @@ import UIKit
 
 class HMActivitiesViewController: UITableViewController {
     
+    @IBOutlet weak var editBarButton: UIBarButtonItem!
+    @IBOutlet weak var addBarButton: UIBarButtonItem!
+    
     var selectedIndexPath: IndexPath? = nil
+    
+    // MARK: View Logic
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         HCommons.setNavbarAppearance(of: self)
         self.title = NSLocalizedString("My Activities", comment: "")
+        
+        editBarButton.title = NSLocalizedString("Edit", comment: "")
     }
 
     // MARK: Table View Overrides

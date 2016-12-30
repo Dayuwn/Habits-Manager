@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+//
+// Defines the action type required of a view controller.
+// Used when one screen can have two different logics.
+//
+
+enum EActionType {
+    case undefined
+    case edit
+    case create
+}

@@ -57,8 +57,8 @@ class HMActivityInformationsCell: UITableViewCell {
     }
     
     private func setHeaders() {
-        typeHeaderLabel.text = NSLocalizedString("AI_Type_Header", comment: "")
-        frequencyHeaderLabel.text = NSLocalizedString("AI_Frequency_Header", comment: "")
-        descriptionHeaderLabel.text = NSLocalizedString("AI_Description_Header", comment: "")
+        typeHeaderLabel.text = NSLocalizedString("Type", comment: "") + ":"
+        frequencyHeaderLabel.text = NSLocalizedString("Frequency", comment: "") + ":"
+        descriptionHeaderLabel.text = NSLocalizedString("Description", comment: "") + ":"
     }
 }
