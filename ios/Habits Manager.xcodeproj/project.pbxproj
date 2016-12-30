@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D0FE5BC1E157DAD002FA24D /* HMActivityInformationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0FE5BB1E157DAD002FA24D /* HMActivityInformationsCell.swift */; };
 		7D87A7D51E1414AF00876891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87A7D41E1414AF00876891 /* AppDelegate.swift */; };
 		7D87A7D71E1414AF00876891 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87A7D61E1414AF00876891 /* FirstViewController.swift */; };
 		7D87A7D91E1414AF00876891 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87A7D81E1414AF00876891 /* SecondViewController.swift */; };
@@ -17,10 +16,18 @@
 		7D87A7ED1E141D5000876891 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D87A7EF1E141D5000876891 /* Localizable.strings */; };
 		7D87A7FD1E1449E300876891 /* HMActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87A7FC1E1449E300876891 /* HMActivitiesViewController.swift */; };
 		7D87A7FF1E1449F100876891 /* HCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87A7FE1E1449F100876891 /* HCommons.swift */; };
+		7D96EBF31E16976A00790FFE /* HMEditActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96EBF21E16976A00790FFE /* HMEditActivityViewController.swift */; };
+		7D96EBF61E16A10D00790FFE /* HMTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96EBF51E16A10D00790FFE /* HMTextFieldCell.swift */; };
+		7D96EBF81E16A16600790FFE /* HMStepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96EBF71E16A16600790FFE /* HMStepperCell.swift */; };
+		7D96EBFA1E16A17900790FFE /* HMRadioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96EBF91E16A17900790FFE /* HMRadioCell.swift */; };
+		7D96EBFC1E16A18E00790FFE /* HMSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96EBFB1E16A18E00790FFE /* HMSliderCell.swift */; };
+		7D96EBFE1E16A1D800790FFE /* HMHeaderCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96EBFD1E16A1D800790FFE /* HMHeaderCustomCell.swift */; };
+		7D96EC001E16A22C00790FFE /* HMActivityInformationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96EBFF1E16A22C00790FFE /* HMActivityInformationsCell.swift */; };
+		7D96EC041E16D4A600790FFE /* EActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96EC031E16D4A600790FFE /* EActivityType.swift */; };
+		7D96EC061E16D4F800790FFE /* EActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96EC051E16D4F800790FFE /* EActionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7D0FE5BB1E157DAD002FA24D /* HMActivityInformationsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMActivityInformationsCell.swift; path = Helpers/Cells/HMActivityInformationsCell.swift; sourceTree = "<group>"; };
 		7D87A7D11E1414AF00876891 /* Habits Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habits Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D87A7D41E1414AF00876891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D87A7D61E1414AF00876891 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,15 @@
 		7D87A7F81E1421C000876891 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7D87A7FC1E1449E300876891 /* HMActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMActivitiesViewController.swift; path = Views/HMActivitiesViewController.swift; sourceTree = "<group>"; };
 		7D87A7FE1E1449F100876891 /* HCommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCommons.swift; path = Helpers/HCommons.swift; sourceTree = "<group>"; };
+		7D96EBF21E16976A00790FFE /* HMEditActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMEditActivityViewController.swift; path = Views/HMEditActivityViewController.swift; sourceTree = "<group>"; };
+		7D96EBF51E16A10D00790FFE /* HMTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMTextFieldCell.swift; path = Views/Cells/EditActivityView/HMTextFieldCell.swift; sourceTree = "<group>"; };
+		7D96EBF71E16A16600790FFE /* HMStepperCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMStepperCell.swift; path = Views/Cells/EditActivityView/HMStepperCell.swift; sourceTree = "<group>"; };
+		7D96EBF91E16A17900790FFE /* HMRadioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMRadioCell.swift; path = Views/Cells/EditActivityView/HMRadioCell.swift; sourceTree = "<group>"; };
+		7D96EBFB1E16A18E00790FFE /* HMSliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMSliderCell.swift; path = Views/Cells/EditActivityView/HMSliderCell.swift; sourceTree = "<group>"; };
+		7D96EBFD1E16A1D800790FFE /* HMHeaderCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMHeaderCustomCell.swift; path = Views/Cells/HMHeaderCustomCell.swift; sourceTree = "<group>"; };
+		7D96EBFF1E16A22C00790FFE /* HMActivityInformationsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMActivityInformationsCell.swift; path = Views/Cells/HMActivityInformationsCell.swift; sourceTree = "<group>"; };
+		7D96EC031E16D4A600790FFE /* EActivityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EActivityType.swift; path = Enums/EActivityType.swift; sourceTree = "<group>"; };
+		7D96EC051E16D4F800790FFE /* EActionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EActionType.swift; path = Enums/EActionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +68,9 @@
 		7D0FE5BA1E157D97002FA24D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				7D0FE5BB1E157DAD002FA24D /* HMActivityInformationsCell.swift */,
+				7D96EBFF1E16A22C00790FFE /* HMActivityInformationsCell.swift */,
+				7D96EBFD1E16A1D800790FFE /* HMHeaderCustomCell.swift */,
+				7D96EBF41E16A0B700790FFE /* EditActivityView */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -76,6 +94,7 @@
 		7D87A7D31E1414AF00876891 /* Habits Manager */ = {
 			isa = PBXGroup;
 			children = (
+				7D96EC021E16D47E00790FFE /* Enums */,
 				7D87A7F91E143AE500876891 /* Helpers */,
 				7D87A7EA1E141CB600876891 /* Views */,
 				7D87A7D41E1414AF00876891 /* AppDelegate.swift */,
@@ -95,6 +114,7 @@
 			children = (
 				7D0FE5BA1E157D97002FA24D /* Cells */,
 				7D87A7FC1E1449E300876891 /* HMActivitiesViewController.swift */,
+				7D96EBF21E16976A00790FFE /* HMEditActivityViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -105,6 +125,26 @@
 				7D87A7FE1E1449F100876891 /* HCommons.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		7D96EBF41E16A0B700790FFE /* EditActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				7D96EBF51E16A10D00790FFE /* HMTextFieldCell.swift */,
+				7D96EBF71E16A16600790FFE /* HMStepperCell.swift */,
+				7D96EBF91E16A17900790FFE /* HMRadioCell.swift */,
+				7D96EBFB1E16A18E00790FFE /* HMSliderCell.swift */,
+			);
+			name = EditActivityView;
+			sourceTree = "<group>";
+		};
+		7D96EC021E16D47E00790FFE /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7D96EC031E16D4A600790FFE /* EActivityType.swift */,
+				7D96EC051E16D4F800790FFE /* EActionType.swift */,
+			);
+			name = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,12 +223,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D96EC001E16A22C00790FFE /* HMActivityInformationsCell.swift in Sources */,
+				7D96EBFC1E16A18E00790FFE /* HMSliderCell.swift in Sources */,
 				7D87A7D91E1414AF00876891 /* SecondViewController.swift in Sources */,
 				7D87A7FD1E1449E300876891 /* HMActivitiesViewController.swift in Sources */,
+				7D96EBF61E16A10D00790FFE /* HMTextFieldCell.swift in Sources */,
+				7D96EC041E16D4A600790FFE /* EActivityType.swift in Sources */,
 				7D87A7D51E1414AF00876891 /* AppDelegate.swift in Sources */,
+				7D96EC061E16D4F800790FFE /* EActionType.swift in Sources */,
+				7D96EBF31E16976A00790FFE /* HMEditActivityViewController.swift in Sources */,
+				7D96EBF81E16A16600790FFE /* HMStepperCell.swift in Sources */,
+				7D96EBFA1E16A17900790FFE /* HMRadioCell.swift in Sources */,
+				7D96EBFE1E16A1D800790FFE /* HMHeaderCustomCell.swift in Sources */,
 				7D87A7FF1E1449F100876891 /* HCommons.swift in Sources */,
 				7D87A7D71E1414AF00876891 /* FirstViewController.swift in Sources */,
-				7D0FE5BC1E157DAD002FA24D /* HMActivityInformationsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
