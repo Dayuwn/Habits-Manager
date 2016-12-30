@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D0FE5BC1E157DAD002FA24D /* HMActivityInformationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0FE5BB1E157DAD002FA24D /* HMActivityInformationsCell.swift */; };
 		7D87A7D51E1414AF00876891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87A7D41E1414AF00876891 /* AppDelegate.swift */; };
 		7D87A7D71E1414AF00876891 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87A7D61E1414AF00876891 /* FirstViewController.swift */; };
 		7D87A7D91E1414AF00876891 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87A7D81E1414AF00876891 /* SecondViewController.swift */; };
 		7D87A7DC1E1414AF00876891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D87A7DA1E1414AF00876891 /* Main.storyboard */; };
 		7D87A7DE1E1414AF00876891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D87A7DD1E1414AF00876891 /* Assets.xcassets */; };
 		7D87A7E11E1414AF00876891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D87A7DF1E1414AF00876891 /* LaunchScreen.storyboard */; };
+		7D87A7ED1E141D5000876891 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D87A7EF1E141D5000876891 /* Localizable.strings */; };
+		7D87A7FD1E1449E300876891 /* HMActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87A7FC1E1449E300876891 /* HMActivitiesViewController.swift */; };
+		7D87A7FF1E1449F100876891 /* HCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87A7FE1E1449F100876891 /* HCommons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D0FE5BB1E157DAD002FA24D /* HMActivityInformationsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMActivityInformationsCell.swift; path = Helpers/Cells/HMActivityInformationsCell.swift; sourceTree = "<group>"; };
 		7D87A7D11E1414AF00876891 /* Habits Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habits Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D87A7D41E1414AF00876891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D87A7D61E1414AF00876891 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,13 @@
 		7D87A7DD1E1414AF00876891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D87A7E01E1414AF00876891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D87A7E21E1414AF00876891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D87A7F11E141DBC00876891 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		7D87A7F21E141DBC00876891 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7D87A7F61E141DE000876891 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		7D87A7F71E1421B100876891 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7D87A7F81E1421C000876891 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7D87A7FC1E1449E300876891 /* HMActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMActivitiesViewController.swift; path = Views/HMActivitiesViewController.swift; sourceTree = "<group>"; };
+		7D87A7FE1E1449F100876891 /* HCommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCommons.swift; path = Helpers/HCommons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D0FE5BA1E157D97002FA24D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7D0FE5BB1E157DAD002FA24D /* HMActivityInformationsCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		7D87A7C81E1414AE00876891 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +76,8 @@
 		7D87A7D31E1414AF00876891 /* Habits Manager */ = {
 			isa = PBXGroup;
 			children = (
+				7D87A7F91E143AE500876891 /* Helpers */,
+				7D87A7EA1E141CB600876891 /* Views */,
 				7D87A7D41E1414AF00876891 /* AppDelegate.swift */,
 				7D87A7D61E1414AF00876891 /* FirstViewController.swift */,
 				7D87A7D81E1414AF00876891 /* SecondViewController.swift */,
@@ -63,8 +85,26 @@
 				7D87A7DD1E1414AF00876891 /* Assets.xcassets */,
 				7D87A7DF1E1414AF00876891 /* LaunchScreen.storyboard */,
 				7D87A7E21E1414AF00876891 /* Info.plist */,
+				7D87A7EF1E141D5000876891 /* Localizable.strings */,
 			);
 			path = "Habits Manager";
+			sourceTree = "<group>";
+		};
+		7D87A7EA1E141CB600876891 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D0FE5BA1E157D97002FA24D /* Cells */,
+				7D87A7FC1E1449E300876891 /* HMActivitiesViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7D87A7F91E143AE500876891 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7D87A7FE1E1449F100876891 /* HCommons.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +151,8 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				es,
 			);
 			mainGroup = 7D87A7C81E1414AE00876891;
 			productRefGroup = 7D87A7D21E1414AF00876891 /* Products */;
@@ -128,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D87A7E11E1414AF00876891 /* LaunchScreen.storyboard in Resources */,
+				7D87A7ED1E141D5000876891 /* Localizable.strings in Resources */,
 				7D87A7DE1E1414AF00876891 /* Assets.xcassets in Resources */,
 				7D87A7DC1E1414AF00876891 /* Main.storyboard in Resources */,
 			);
@@ -141,8 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D87A7D91E1414AF00876891 /* SecondViewController.swift in Sources */,
+				7D87A7FD1E1449E300876891 /* HMActivitiesViewController.swift in Sources */,
 				7D87A7D51E1414AF00876891 /* AppDelegate.swift in Sources */,
+				7D87A7FF1E1449F100876891 /* HCommons.swift in Sources */,
 				7D87A7D71E1414AF00876891 /* FirstViewController.swift in Sources */,
+				7D0FE5BC1E157DAD002FA24D /* HMActivityInformationsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +199,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				7D87A7DB1E1414AF00876891 /* Base */,
+				7D87A7F11E141DBC00876891 /* fr */,
+				7D87A7F61E141DE000876891 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -165,6 +213,16 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		7D87A7EF1E141D5000876891 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D87A7F21E141DBC00876891 /* fr */,
+				7D87A7F71E1421B100876891 /* es */,
+				7D87A7F81E1421C000876891 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -172,6 +230,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -221,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -304,6 +364,7 @@
 				7D87A7E71E1414AF00876891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

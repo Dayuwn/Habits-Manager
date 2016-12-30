@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Habits Manager
+
+  Created by Lucas Rollet on 28/12/2016.
+  Copyright © 2016 Lucas Rollet. All rights reserved.
+*/
+
+// Navbar titles
+"My Activities" = "My Activities";
+
+// Activity Informations
+"AI_Type_Header" = "Type:";
+"AI_Frequency_Header" = "Frequency:";
+"AI_Description_Header" = "Description:";
