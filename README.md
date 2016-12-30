@@ -8,9 +8,9 @@ You can see your improvements in the form of a calendar and (incoming) graphs fo
 
 The app supports two types of activities for now:
 - **Booleans:** Can be done or not
-- *I ran today*
+    - *I ran today*
 - **Timed:** Requires to be done during a given amount of time
-- *I have to run 30 minutes today*
+    - *I have to run 30 minutes today*
 
 The iOS version is coded natively using Swift 3.
 
