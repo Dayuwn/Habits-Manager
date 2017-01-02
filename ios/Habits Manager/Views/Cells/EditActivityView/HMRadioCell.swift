@@ -20,6 +20,8 @@ class HMRadioCell: HMHeaderCustomCell {
     }
     dynamic var selectedTypeRaw: Int = -1
     
+    // MARK: View Logic
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -30,6 +32,8 @@ class HMRadioCell: HMHeaderCustomCell {
         self.timedRadioButton.setTitle(" " + NSLocalizedString("Timed", comment: ""), for: .normal)
         self.timedRadioButton.tag = 1
     }
+        
+    // MARK: User Interaction
 
     // Only one of the two buttons can be selected at a time.
     @IBAction func buttonPressed(_ sender: UIButton!) {
