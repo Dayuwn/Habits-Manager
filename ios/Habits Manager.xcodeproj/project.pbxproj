@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D1A85231E197277004F0CB7 /* DActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A85221E197277004F0CB7 /* DActivity.swift */; };
 		7D87A7D51E1414AF00876891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87A7D41E1414AF00876891 /* AppDelegate.swift */; };
 		7D87A7D71E1414AF00876891 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87A7D61E1414AF00876891 /* FirstViewController.swift */; };
 		7D87A7D91E1414AF00876891 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87A7D81E1414AF00876891 /* SecondViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D1A85221E197277004F0CB7 /* DActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DActivity.swift; path = Data/DActivity.swift; sourceTree = "<group>"; };
 		7D87A7D11E1414AF00876891 /* Habits Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habits Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D87A7D41E1414AF00876891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D87A7D61E1414AF00876891 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		7D1A85211E197249004F0CB7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7D1A85221E197277004F0CB7 /* DActivity.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		7D87A7C81E1414AE00876891 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 		7D87A7D31E1414AF00876891 /* Habits Manager */ = {
 			isa = PBXGroup;
 			children = (
+				7D1A85211E197249004F0CB7 /* Data */,
 				7D96EC021E16D47E00790FFE /* Enums */,
 				7D87A7F91E143AE500876891 /* Helpers */,
 				7D87A7EA1E141CB600876891 /* Views */,
@@ -234,6 +245,7 @@
 				7D96EBF31E16976A00790FFE /* HMEditActivityViewController.swift in Sources */,
 				7D96EBF81E16A16600790FFE /* HMStepperCell.swift in Sources */,
 				7D96EBFA1E16A17900790FFE /* HMRadioCell.swift in Sources */,
+				7D1A85231E197277004F0CB7 /* DActivity.swift in Sources */,
 				7D96EBFE1E16A1D800790FFE /* HMHeaderCustomCell.swift in Sources */,
 				7D87A7FF1E1449F100876891 /* HCommons.swift in Sources */,
 				7D87A7D71E1414AF00876891 /* FirstViewController.swift in Sources */,

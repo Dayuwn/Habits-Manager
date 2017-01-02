@@ -18,15 +18,18 @@ import UIKit
 
 class HMEditActivityViewController: UITableViewController {
 
+    var nameCell: HMTextFieldCell!
+    var descriptionCell: HMTextFieldCell!
+    var frequencyCell: HMStepperCell!
     var typeCell: HMRadioCell!
+    var minTimeCell: HMSliderCell?
     
     var actionType: EActionType = .undefined
-    
     // In case of EDIT action
     var activityData: String? = nil
-    
     // In case of CREATE action
     var selectedType: EActivityType = .boolean
+    
     
     // MARK: View Logic
     
@@ -34,12 +37,6 @@ class HMEditActivityViewController: UITableViewController {
         super.viewDidLoad()
 
         tableView.tableFooterView = UIView()
-    }
-    
-    // MARK: User Interactions
-    
-    @IBAction func cancelBarButtonPressed(_ sender: UIBarButtonItem) {
-        _ = navigationController?.popViewController(animated: true)
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -60,6 +57,51 @@ class HMEditActivityViewController: UITableViewController {
         }
     }
     
+    func stopObservingType() {
+        typeCell.removeObserver(self, forKeyPath: "selectedTypeRaw")
+    }
+    
+    
+    // MARK: User Interactions
+    
+    @IBAction func cancelBarButtonPressed(_ sender: UIBarButtonItem) {
+        self.stopObservingType()
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
+    // Saves or edits activity with given data
+    @IBAction func saveBarButtonPressed(_ sender: UIBarButtonItem) {
+        self.stopObservingType()
+        
+        // Gets information about the activity
+        let acName = nameCell.textField?.text ?? ""
+        let acDescription = descriptionCell.textField?.text ?? ""
+        let acFrequency = frequencyCell.frequencyStepper?.value ?? -1
+        let acType = self.selectedType
+
+        var acMinTime: Int? = nil
+        if acType == .timed {
+            acMinTime = Optional(Int((minTimeCell?.slider?.value)!)) ?? -1
+        }
+        
+        let defaults = UserDefaults.standard
+
+        // Creates an activity and appends it to the current ones
+        if self.actionType == .create {
+            let activity = DActivity(name: acName, description: acDescription, frequency: Int(acFrequency), type: acType, minTime: acMinTime)
+            
+            if let savedUserActivities = defaults.object(forKey: "userActivities") as? Data {
+                var userActivities = NSKeyedUnarchiver.unarchiveObject(with: savedUserActivities) as! [DActivity]
+                userActivities.append(activity)
+                let savedData = NSKeyedArchiver.archivedData(withRootObject: userActivities)
+                defaults.set(savedData, forKey: "userActivities")
+            }
+        }
+        
+        _ = navigationController?.popViewController(animated: true)
+        
+    }
+    
     // MARK: Table View Overrides
     
     // Shows the good cell according to the given section
@@ -69,17 +111,21 @@ class HMEditActivityViewController: UITableViewController {
         switch indexPath.section {
         case 0:
             cell = tableView.dequeueReusableCell(withIdentifier: "NameCell", for: indexPath)
+            self.nameCell = cell as! HMTextFieldCell
         case 1:
             cell = tableView.dequeueReusableCell(withIdentifier: "DescriptionCell", for: indexPath)
+            self.descriptionCell = cell as! HMTextFieldCell
         case 2:
             cell = tableView.dequeueReusableCell(withIdentifier: "FrequencyCell", for: indexPath)
+            self.frequencyCell = cell as! HMStepperCell
         case 3:
             cell = tableView.dequeueReusableCell(withIdentifier: "TypeCell", for: indexPath)
             self.typeCell = cell as! HMRadioCell
             // When the type of activity changes, the MinTime cell may have to be shown or hidden/.
             self.typeCell.addObserver(self, forKeyPath: "selectedTypeRaw", options: NSKeyValueObservingOptions.new, context: nil)
         case 4:
-            cell = tableView.dequeueReusableCell(withIdentifier: "MinTimeCell", for: indexPath) as! HMSliderCell
+            cell = tableView.dequeueReusableCell(withIdentifier: "MinTimeCell", for: indexPath)
+            self.minTimeCell = cell as? HMSliderCell
         default:
             cell = UITableViewCell()
         }

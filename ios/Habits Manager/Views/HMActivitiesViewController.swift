@@ -26,8 +26,22 @@ class HMActivitiesViewController: UITableViewController {
         editBarButton.title = NSLocalizedString("Edit", comment: "")
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Sets the edit view's action type
+        if let editActivityVC = segue.destination as? HMEditActivityViewController {
+            switch segue.identifier! {
+                case "Edit Activity":
+                    editActivityVC.actionType = .edit
+                case "Create Activity":
+                    editActivityVC.actionType = .create
+                default:
+                    editActivityVC.actionType = .undefined
+            }
+        }
+    }
+    
     // MARK: Table View Overrides
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HMCell2", for: indexPath)
         return cell
@@ -55,6 +69,7 @@ class HMActivitiesViewController: UITableViewController {
         if selectedIndexPath == indexPath {
             selectedIndexPath = nil
         }
+        
         
         (tableView.cellForRow(at: indexPath) as! HMActivityInformationsCell).flipChevron()
         
